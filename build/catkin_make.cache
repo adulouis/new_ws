@@ -1,0 +1,2 @@
+new_bot
+-DCATKIN_DEVEL_PREFIX=/home/louwee/new_ws/devel -DCMAKE_INSTALL_PREFIX=/home/louwee/new_ws/install -G Unix Makefiles

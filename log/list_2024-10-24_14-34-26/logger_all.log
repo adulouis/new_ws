@@ -1,0 +1,65 @@
+[14.264s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/louwee/new_ws']
+[14.265s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], base_paths=['/home/louwee/new_ws'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f64f3d356d0>>, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('list',), names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f64f3d356d0>, verb_name='list', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f64f3d477c0>)
+[17.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[17.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[17.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[17.343s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[17.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[17.361s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/louwee/new_ws'
+[17.362s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extensions ['ignore', 'ignore_ament_install']
+[17.363s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extension 'ignore'
+[17.364s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extension 'ignore_ament_install'
+[17.365s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extensions ['colcon_pkg']
+[17.366s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extension 'colcon_pkg'
+[17.367s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extensions ['colcon_meta']
+[17.367s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extension 'colcon_meta'
+[17.368s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extensions ['ros']
+[17.368s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extension 'ros'
+[17.744s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extensions ['cmake', 'python']
+[17.744s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extension 'cmake'
+[17.745s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extension 'python'
+[17.745s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extensions ['python_setup_py']
+[17.745s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws) by extension 'python_setup_py'
+[17.746s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[17.747s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extension 'ignore'
+[17.747s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extension 'ignore_ament_install'
+[17.748s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extensions ['colcon_pkg']
+[17.748s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extension 'colcon_pkg'
+[17.748s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extensions ['colcon_meta']
+[17.750s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extension 'colcon_meta'
+[17.752s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extensions ['ros']
+[17.753s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) by extension 'ros'
+[17.758s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/build) ignored
+[17.759s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/devel) by extensions ['ignore', 'ignore_ament_install']
+[17.760s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/devel) by extension 'ignore'
+[17.765s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/devel) by extension 'ignore_ament_install'
+[17.766s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/devel) ignored
+[17.768s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[17.770s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/log) by extension 'ignore'
+[17.771s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/log) ignored
+[17.773s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[17.774s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extension 'ignore'
+[17.775s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extension 'ignore_ament_install'
+[17.776s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extensions ['colcon_pkg']
+[17.776s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extension 'colcon_pkg'
+[17.777s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extensions ['colcon_meta']
+[17.782s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extension 'colcon_meta'
+[17.783s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extensions ['ros']
+[17.784s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extension 'ros'
+[17.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extensions ['cmake', 'python']
+[17.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extension 'cmake'
+[17.993s] WARNING:colcon.colcon_cmake.package_identification.cmake:Ignoring '/home/louwee/new_ws/src/CMakeLists.txt' since it seems to be a toplevel CMake file generated by 'catkin_make'
+[17.994s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extension 'python'
+[17.995s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extensions ['python_setup_py']
+[17.996s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src) by extension 'python_setup_py'
+[17.998s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extensions ['ignore', 'ignore_ament_install']
+[17.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extension 'ignore'
+[18.000s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extension 'ignore_ament_install'
+[18.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extensions ['colcon_pkg']
+[18.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extension 'colcon_pkg'
+[18.003s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extensions ['colcon_meta']
+[18.007s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extension 'colcon_meta'
+[18.008s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extensions ['ros']
+[18.008s] Level 1:colcon.colcon_core.package_identification:_identify(/home/louwee/new_ws/src/new_bot) by extension 'ros'
+[18.052s] DEBUG:colcon.colcon_core.package_identification:Package '/home/louwee/new_ws/src/new_bot' with type 'ros.catkin' and name 'new_bot'
+[18.053s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
