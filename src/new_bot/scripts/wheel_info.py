@@ -1,6 +1,6 @@
 import rospy
 from sensor_msgs.msg import JointState
-from std_msgs.msg import Int32
+from std_msgs.msg import Int32MultiArray
 import math
 
 class WheelEncoderInfo:
@@ -10,13 +10,14 @@ class WheelEncoderInfo:
 
         # Encoder parameters
         self.ticks_per_revolution = rospy.get_param("~ticks_per_revolution", 360)
-        self.encoder_ticks = 0
+        self.encoder_ticks_l = 0
+        self.encoder_ticks_r = 0
         self.prev_angle_l = 0.0
         self.prev_angle_r = 0.0
         self.first_run = True
 
         # ROS publisher for encoder ticks
-        self.encoder_pub = rospy.Publisher('/wheel_encoder_ticks', Int32, queue_size=10)
+        self.encoder_pub = rospy.Publisher('/wheel_encoder_ticks', Int32MultiArray, queue_size=10)
 
         # ROS subscriber for joint states
         rospy.Subscriber("/joint_states", JointState, self.joint_state_callback)
@@ -34,7 +35,6 @@ class WheelEncoderInfo:
         current_angle_l = msg.position[wheel_index_l]
         current_angle_r = msg.position[wheel_index_r]
 
-
         # Skip calculation on first run to initialize prev_angle
         if self.first_run:
             self.prev_angle_l = current_angle_l
@@ -49,24 +49,24 @@ class WheelEncoderInfo:
         self.prev_angle_r = current_angle_r
 
         # Convert angle difference to encoder ticks
-        delta_ticks_l= int((delta_angle_l / (2 * math.pi)) * self.ticks_per_revolution)
-        delta_ticks_r= int((delta_angle_r / (2 * math.pi)) * self.ticks_per_revolution)
+        delta_ticks_l = int((delta_angle_l / (2 * math.pi)) * self.ticks_per_revolution)
+        delta_ticks_r = int((delta_angle_r / (2 * math.pi)) * self.ticks_per_revolution)
         self.encoder_ticks_l += delta_ticks_l
         self.encoder_ticks_r += delta_ticks_r
 
-        # Publish encoder ticks
-        tick_msg = Int32()
-        tick_msg.data = (self.encoder_ticks_l,self.encoder_ticks_r)
+        # Publish encoder ticks as an array
+        tick_msg = Int32MultiArray()
+        tick_msg.data = [self.encoder_ticks_l, self.encoder_ticks_r]
         self.encoder_pub.publish(tick_msg)
 
-        rospy.loginfo("Published encoder ticks: %d", self.encoder_ticks)
+        rospy.loginfo("Published encoder ticks: Left: %d, Right: %d", self.encoder_ticks_l, self.encoder_ticks_r)
 
     def run(self):
         rospy.spin()
 
 if __name__ == '__main__':
     try:
-        encoder_simulator = WheelEncoderSimulator()
+        encoder_simulator = WheelEncoderInfo()
         encoder_simulator.run()
     except rospy.ROSInterruptException:
         pass
