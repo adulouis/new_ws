@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from std_msgs.msg import Int32MultiArray
+from geometry_msgs.msg import Twist
 import math
 
 class DifferentialDrivePlugin(Node):
@@ -82,7 +83,7 @@ class DifferentialDrivePlugin(Node):
         self.odom_pub.publish(odom_msg)
 
     def update_velocity(self):
-        current_time = self.get_clock.now()
+        current_time = self.get_clock().now()
         dt = dt = (current_time - self.last_time).nanoseconds / 1e9  # Convert nanoseconds to seconds
         self.last_time = current_time
 
