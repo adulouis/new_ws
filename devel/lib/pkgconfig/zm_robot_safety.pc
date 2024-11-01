@@ -1,0 +1,8 @@
+prefix=/home/louwee/new_ws/devel
+
+Name: zm_robot_safety
+Description: Description of zm_robot_safety
+Version: 0.0.0
+Cflags: -I/home/louwee/new_ws/devel/include -I/home/louwee/new_ws/src/zm_robot-ros1-main/zm_robot_safety/include
+Libs: -L${prefix}/lib 
+Requires: dynamic_reconfigure geometry_msgs laser_geometry sensor_msgs std_msgs tf visualization_msgs

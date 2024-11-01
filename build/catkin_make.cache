@@ -1,2 +1,2 @@
-new_bot
+new_bot:zm_robot-ros1-main/zm_robot_description:zm_robot-ros1-main/zm_robot_gazebo:zm_robot-ros1-main/zm_robot_navigation:zm_robot-ros1-main/zm_robot_programing:zm_robot-ros1-main/zm_robot_safety:zm_robot-ros1-main/zm_robot_teleope_key:zm_robot-ros1-main/zm_robot_twist_mux:zm_robot-ros1-main/zm_robot_warehouse
 -DCATKIN_DEVEL_PREFIX=/home/louwee/new_ws/devel -DCMAKE_INSTALL_PREFIX=/home/louwee/new_ws/install -G Unix Makefiles

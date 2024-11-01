@@ -132,6 +132,14 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/louwee/new_ws/build/gtest/cmake_install.cmake")
   include("/home/louwee/new_ws/build/new_bot/cmake_install.cmake")
+  include("/home/louwee/new_ws/build/zm_robot-ros1-main/zm_robot_description/cmake_install.cmake")
+  include("/home/louwee/new_ws/build/zm_robot-ros1-main/zm_robot_gazebo/cmake_install.cmake")
+  include("/home/louwee/new_ws/build/zm_robot-ros1-main/zm_robot_navigation/cmake_install.cmake")
+  include("/home/louwee/new_ws/build/zm_robot-ros1-main/zm_robot_programing/cmake_install.cmake")
+  include("/home/louwee/new_ws/build/zm_robot-ros1-main/zm_robot_safety/cmake_install.cmake")
+  include("/home/louwee/new_ws/build/zm_robot-ros1-main/zm_robot_teleope_key/cmake_install.cmake")
+  include("/home/louwee/new_ws/build/zm_robot-ros1-main/zm_robot_twist_mux/cmake_install.cmake")
+  include("/home/louwee/new_ws/build/zm_robot-ros1-main/zm_robot_warehouse/cmake_install.cmake")
 
 endif()
 
