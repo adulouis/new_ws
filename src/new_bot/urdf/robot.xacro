@@ -206,9 +206,9 @@
         <joint name="right_wheel_joint"/>
         <mechanicalReduction>1</mechanicalReduction>
     </transmission>
-
+</robot>
     <!-- Gazebo plugin for differential drive control -->
-    <gazebo>
+    <!-- <gazebo>
         <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
     
         <!-- Plugin update rate in Hz -->
@@ -259,5 +259,5 @@
             <!-- Set to true to swap right and left wheels, defaults to true -->
             <legacyMode>false</legacyMode>
         </plugin>
-    </gazebo>
+    </gazebo> -->
 </robot>

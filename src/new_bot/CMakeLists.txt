@@ -120,6 +120,11 @@ catkin_install_python(PROGRAMS scripts/custom_controller.py
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+catkin_install_python(PROGRAMS scripts/custom_diff_drive_plugin.py
+                      DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+                      )
+
+
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

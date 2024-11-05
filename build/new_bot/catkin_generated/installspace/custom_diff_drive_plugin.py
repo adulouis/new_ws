@@ -8,7 +8,7 @@ from geometry_msgs.msg import Twist
 import math
 
 
-class DifferentialDrivePlugin(Node):
+class DifferentialDrivePlugin(Node)
     def __init__(self):
         super().__init__('differentialdriveplugin')
         

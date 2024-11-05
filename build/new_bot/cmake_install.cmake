@@ -56,3 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/new_bot" TYPE PROGRAM FILES "/home/louwee/new_ws/build/new_bot/catkin_generated/installspace/custom_controller.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/new_bot" TYPE PROGRAM FILES "/home/louwee/new_ws/build/new_bot/catkin_generated/installspace/custom_diff_drive_plugin.py")
+endif()
+

@@ -33,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/louwee/new_ws/src/new_bot/CMakeLists.txt"
   "/home/louwee/new_ws/src/new_bot/package.xml"
   "/home/louwee/new_ws/src/new_bot/scripts/custom_controller.py"
+  "/home/louwee/new_ws/src/new_bot/scripts/custom_diff_drive_plugin.py"
   "/home/louwee/new_ws/src/zm_robot-ros1-main/zm_robot_description/CMakeLists.txt"
   "/home/louwee/new_ws/src/zm_robot-ros1-main/zm_robot_description/package.xml"
   "/home/louwee/new_ws/src/zm_robot-ros1-main/zm_robot_gazebo/CMakeLists.txt"
